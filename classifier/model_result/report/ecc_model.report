@@ -1,0 +1,3 @@
+data_base/eval_data.json  precision: 0.0
+data_base/eval_data_L1OLS.json  precision: 0.915101900618
+data_base/eval_data.json  precision: 0.913269979391

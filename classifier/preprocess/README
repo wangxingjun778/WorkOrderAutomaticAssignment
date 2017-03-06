@@ -1,0 +1,7 @@
+
+preprocess.py 
+    There are title and content, extract some features from them.    Ex: {xxx:1, xxxx:2, ...}
+
+
+Function usage:
+    python preprocess.py

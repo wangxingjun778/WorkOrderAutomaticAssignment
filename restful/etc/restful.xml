@@ -1,0 +1,10 @@
+<uwsgi>
+    <module>rest.wsgi</module>
+    <master/>
+    <python-path>/home/appadmin/heavy_L1/restful</python-path>
+    <pidfile>/home/appadmin/heavy_L1/restful/etc/uwsgi.pid</pidfile>
+    <processes>20</processes>
+    <max-requests>5000</max-requests>
+    <daemonize>/home/appadmin/heavy_L1/restful/log/uwsgi.log</daemonize>
+    <http>0.0.0.0:9898</http>
+</uwsgi>

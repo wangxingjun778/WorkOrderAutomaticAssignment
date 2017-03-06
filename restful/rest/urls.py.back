@@ -1,0 +1,12 @@
+from django.conf.urls import url     
+from django.contrib import admin    
+admin.autodiscover()        
+from api import views
+
+
+urlpatterns = [
+    url(r'^para/$', 'api.views.para', name='para'), 
+
+    url(r'^admin/', admin.site.urls),
+    
+]

@@ -1,0 +1,9 @@
+[25/Dec/2016 17:54:18] INFO [django.server:131] "POST /para/ HTTP/1.1" 200 69
+[25/Dec/2016 17:56:04] ERROR [django.security.DisallowedHost:73] Invalid HTTP_HOST header: '0.0.0.0:9898'. You may need to add u'0.0.0.0' to ALLOWED_HOSTS.
+[25/Dec/2016 17:56:04] DEBUG [django.template:929] Exception while resolving variable 'user' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/appadmin/anaconda2/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [user] in u"<WSGIRequest: POST '/para/'>"
+[25/Dec/2016 17:56:04] WARNING [django.server:131] "POST /para/ HTTP/1.1" 400 62067
+[25/Dec/2016 17:56:33] INFO [django.server:131] "POST /para/ HTTP/1.1" 200 69

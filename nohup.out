@@ -1,0 +1,76 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Starting classification server...
+Loading model cost 0.517 seconds.
+Prefix dict has been built succesfully.
+
+Model training ...
+
+****Write the training data:  /home/oaadmin/heavy_L1/classifier/data_base/ecc_model.json 
+
+/home/oaadmin/heavy_L1/classifier/data_base/ecc_model.json
+train the model /home/oaadmin/heavy_L1/classifier/data_base/ecc_model.json
+dump the model /home/oaadmin/heavy_L1/classifier/model_result/model/ecc_model.model
+----------len featrue coef: 1
+------------- L1
+2883 features has been selected!
+
+****Write the training data:  /home/oaadmin/heavy_L1/classifier/data_base/lccrm_model.json 
+
+/home/oaadmin/heavy_L1/classifier/data_base/lccrm_model.json
+train the model /home/oaadmin/heavy_L1/classifier/data_base/lccrm_model.json
+dump the model /home/oaadmin/heavy_L1/classifier/model_result/model/lccrm_model.model
+----------len featrue coef: 1
+------------- L1
+2997 features has been selected!
+***Reload the service.
+
+
+Update_model service is sleeping ...
+
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.584 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.397 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Starting classification server...
+Dumping model to file cache /tmp/jieba.cache
+Loading model cost 2.384 seconds.
+Prefix dict has been built succesfully.
+
+Model training ...
+
+****Write the training data:  /home/oaadmin/heavy_L1/classifier/data_base/ecc_model.json 
+
+/home/oaadmin/heavy_L1/classifier/data_base/ecc_model.json
+train the model /home/oaadmin/heavy_L1/classifier/data_base/ecc_model.json
+dump the model /home/oaadmin/heavy_L1/classifier/model_result/model/ecc_model.model
+----------len featrue coef: 1
+------------- L1
+2911 features has been selected!
+
+****Write the training data:  /home/oaadmin/heavy_L1/classifier/data_base/lccrm_model.json 
+
+/home/oaadmin/heavy_L1/classifier/data_base/lccrm_model.json
+train the model /home/oaadmin/heavy_L1/classifier/data_base/lccrm_model.json
+dump the model /home/oaadmin/heavy_L1/classifier/model_result/model/lccrm_model.model
+----------len featrue coef: 1
+------------- L1
+3026 features has been selected!
+***Reload the service.
+
+
+Update_model service is sleeping ...
+
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.757 seconds.
+Prefix dict has been built succesfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.701 seconds.
+Prefix dict has been built succesfully.
