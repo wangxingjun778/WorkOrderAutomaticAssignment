@@ -12,10 +12,16 @@ cur_dir = os.path.dirname(os.path.abspath(__file__)) or os.getcwd()
 sys.path.append(cur_dir)
 
 class Predict(object):
+    """
+    预测类
+    """
     def __init__(self):
         pass
 
     def load_model(self, model_file):
+        """
+        load model from disk
+        """
         fp = open(model_file, "r")
         (self.pipeline, self.label_encoder) = pickle.load(fp)
         logger = logging.getLogger("lda")
@@ -26,6 +32,9 @@ class Predict(object):
         #print '='*10, 'Done init_test !'
 
     def init_test(self):
+        """
+        Initialize model to predict
+        """
         self.vectorizer =  self.pipeline.named_steps['vec']
         self.feature_select = self.pipeline.named_steps['feat']
         self.clf = self.pipeline.named_steps['clf']
@@ -57,6 +66,9 @@ class Predict(object):
         return unicode(result)
 
     def print_distance(self, features):
+        """
+        print distances from given features to support vector
+        """
         try:
             distances = self.pipeline.decision_function(features)
             for i in range(len(distances[0])):
@@ -77,6 +89,7 @@ class Predict(object):
 
     def print_features_distance(self, features):
         try:
+            # get distances from given point to each support vector
             distances = self.pipeline.decision_function(features)
         except Exception as e:
             traceback.print_exc()

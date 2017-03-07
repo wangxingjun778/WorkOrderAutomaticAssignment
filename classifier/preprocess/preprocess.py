@@ -40,7 +40,7 @@ class Preprocess(object):
         for (key,value) in self.config.items(section):
             self.d_models[key] = value
             
-
+    # 载入停用词或者停用特征
     def load_option_words(self, section, option, word_set):
         if self.config.has_option(section, option):
             if option == "stop_feature_dir":
@@ -92,6 +92,12 @@ class Preprocess(object):
             return False
 
     def convert_word_features(self, text, model_name):
+        """
+        将text文本分词，并统计词频，返回词频字典
+        :param text: 输入文本
+        :param model_name: 模型名称，对应不同的停用特征
+        :return features: 词频字典{word1: count, word2: count, ...}
+        """
         words = self.segmenter.segment(text.strip())
         features = {}
 
@@ -115,6 +121,7 @@ class Preprocess(object):
         features = self.convert_word_features(text, model_name)
         return features
 
+    # 替换文本中的中文特殊字符
     def extract_sentence(self, text):            
         for (ostr, rstr) in self.replace_lst:
             text = text.replace(ostr, rstr)

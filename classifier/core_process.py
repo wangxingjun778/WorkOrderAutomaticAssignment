@@ -73,6 +73,9 @@ class Core_Process(object):
         
          
     def train_all(self, train_data_dir, model_name='root'):
+        """
+        train model with all training dataset, use model 'root' by default
+        """
         self.load_data_path(train_data_dir)
 
         print >> sys.stderr, "train the model", train_data_dir
